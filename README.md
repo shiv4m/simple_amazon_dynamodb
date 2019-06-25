@@ -1,1 +1,2 @@
 # simple_amazon_dynamodb
+A simplified version of Amazon's dynamodb (key-value storage). Implemented a fault tolerance protocol, Insertion, Deletion and Query. Designed to handle multiple versions of same key i.e. Always returns an updated value in an event of multiple node failures. Uses quorum based replication with a factor of 3. Implemented a synchronization protocol in a case of node recovery.
